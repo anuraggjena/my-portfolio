@@ -97,12 +97,12 @@ export default function Header(): JSX.Element {
           <div className="flex items-center gap-3">
             <div className="hidden md:block">
               <Button variant="outline" size="sm" asChild>
-                <a href="/resume.pdf" download><FileText />Resume</a>
+                <a href="/Anurag_Jena_Resume.pdf" download><FileText />Resume</a>
               </Button>
             </div>
 
             <div className="md:hidden">
-              <a href="/resume.pdf" download className="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium bg-primary-600 text-primary">
+              <a href="/Anurag_Jena_Resume.pdf" download className="inline-flex items-center rounded-md px-2 py-1 text-sm font-medium bg-primary-600 text-primary">
                 <FileText />
               </a>
             </div>
