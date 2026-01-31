@@ -35,7 +35,7 @@ export default function Hero(): JSX.Element {
 
               <motion.div whileHover={{ scale: 1.03 }}>
                 <Button size="lg" variant="outline" asChild>
-                  <a className="cta-outline" href="/anurag_jena_resume.pdf" download>Download Resume</a>
+                  <a className="cta-outline" href="/Anurag_Jena_Resume.pdf" download>Download Resume</a>
                 </Button>
               </motion.div>
             </div>
