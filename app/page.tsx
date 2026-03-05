@@ -861,21 +861,27 @@ export default function App() {
                     desc: "RAG-based personalized project ideas generator. Analyzes user proficiency matrices and outputs targeted, actionable development schematics.",
                     stack: ["Next.js", "Node.js", "Drizzle ORM", "OpenAI"],
                     id: "01",
-                    image: "/skillforge.png"
+                    image: "/skillforge.png",
+                    live: "https://skillforge-dev.vercel.app",
+                    source: "https://github.com/anuraggjena/skillforge-ai"
                   },
                   {
                     title: "Clariox AI",
                     desc: "Notion-style block editor featuring intelligent auto-save and a highly embedded AI writing assistant. Tactical data management system engineered for seamless ideation.",
                     stack: ["React.js", "Lexical", "Zustand", "FastAPI"],
                     id: "02",
-                    image: "/clariox.png"
+                    image: "/clariox.png",
+                    live: "https://clariox-snowy.vercel.app",
+                    source: "https://github.com/anuraggjena/clariox"
                   },
                   {
                     title: "ProBid-AI",
                     desc: "Automated AI job proposal creator outfitted with a Semantic Matching engine to guarantee maximum hit rate on competitive freelance contracts.",
                     stack: ["Next.js", "PostgreSQL", "NLP","Xenova Transformers"],
                     id: "03",
-                    image: "/probid.png"
+                    image: "/probid.png",
+                    live: "https://probid-ai.vercel.app",
+                    source: "github.com/anuraggjena/probid-ai"
                   }
                 ].map((project, idx) => (
                   <motion.div 
@@ -915,10 +921,10 @@ export default function App() {
                       </div>
 
                       <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4 mt-auto">
-                        <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-2 text-[10px] md:text-sm font-bold uppercase tracking-widest text-white bg-red-700 rounded hover:bg-red-600 px-4 md:px-6 py-2.5 md:py-3 transition-colors shadow-lg shadow-red-900/20 font-mono">
+                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 text-[10px] md:text-sm font-bold uppercase tracking-widest text-white bg-red-700 rounded hover:bg-red-600 px-4 md:px-6 py-2.5 md:py-3 transition-colors shadow-lg shadow-red-900/20 font-mono">
                           Live Feed <ExternalLink size={14} className="md:w-4 md:h-4" />
                         </a>
-                        <a href="#" className="w-full sm:w-auto flex items-center justify-center gap-2 text-[10px] md:text-sm font-bold uppercase tracking-widest text-gray-300 hover:text-white rounded border border-white/10 hover:border-red-500 px-4 md:px-6 py-2.5 md:py-3 transition-colors bg-white/5 font-mono">
+                        <a href={project.source} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto flex items-center justify-center gap-2 text-[10px] md:text-sm font-bold uppercase tracking-widest text-gray-300 hover:text-white rounded border border-white/10 hover:border-red-500 px-4 md:px-6 py-2.5 md:py-3 transition-colors bg-white/5 font-mono">
                           Source <Github size={14} className="md:w-4 md:h-4" />
                         </a>
                       </div>
